@@ -1,0 +1,21 @@
+#first
+{
+    color: seagreen;
+    font-style:bold;
+}
+.c
+{
+    color: royalblue;
+}
+p.c,span
+{
+    font-style: italic;
+}
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+    background-color: #5F1739;
+}

@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>First Java Script</title>
+</head>
+<body>
+    <!--<script>
+        num = 10;                           //declaring variable
+        document.write(num + "<br>");       //printing value
+        document.write(typeof num + "<br>");
+        num = "vwits"
+        document.write(num + "<br>");                //printing value
+        document.write(typeof num + "<br>");
+        document.write(typeof true + "<br>");
+        document.write(typeof xyz + "<br>");
+        if (num%2 == 0)
+            document.write("even");
+        else
+            document.write("odd");
+        var a = 10;
+        var b = '10';
+        document.write(a == b);                         //true - non strict equality
+        document.write(a === b);                        //false - strict equality
+        document.write(a != b);                         //non strict inequality
+        document.write(a !== b);                        //strict inequality
+
+        var a =10;
+        var a = 21;
+        console.log("a =",a);
+        b=40;
+        console.log("b =",b);
+    </script>-->
+    <script>
+        let f=function ()                   //anonymous function(this is the strategy used by jquery to execute call back function)
+        {
+            console.log('Hi!');
+        }
+        f();
+        let a= () =>
+        {
+            console.log('New ESv6');
+        }
+        a();
+        let b= () => console.log('New ESv6 arrow function');
+        b();
+
+        let c= () => {return('New ESv6 arrow function');}
+        console.log(c());
+
+        let d= () => ('without return');
+        console.log(d());
+
+        let e= (i) => 'Argument :' + i;
+        console.log(e(10));
+
+        let g= i => 'Argument :' + i;
+        console.log(g(10));
+
+        let h= i => 'Argument :' + i;
+        console.log(h());
+
+        function demo(args=30)
+        {
+            console.log(args);
+        }
+        demo(1010);             // as we are passing 1010 as argument this value will be used in demo function
+        demo();                 // as we are not passing any argument default value will be used in demo function
+
+        function sum(...values)
+        {
+            console.log(values)
+        }
+        sum('Joe', 26);
+        sum(1,2);
+        sum(1,3,5,7);
+
+        class Room
+        {
+            constructor(name)
+            {
+                this.name=name;
+                console.log("In room constructor");
+            }
+            display()
+            {
+                console.log(this.name);
+            }
+        };
+        let r=new Room("Meeting Room");       //object creation for Room class
+        let r1=new Room("Conference Room");
+        r.display();
+        r1.display();
+
+        class Employee
+        {
+
+        };
+
+        class Developer extends Employee
+        {
+
+        };
+        let str=" this is demo string   ";
+        console.log(str.charAt(1));
+        console.log(str.concat("Thisis other string"));
+        console.log(str.length);
+        console.log(str.trim().length);
+        console.log(str.startsWith(" t"));
+        console.log(str.endsWith(" t"));
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+        console.log(str.substring(1,3));
+        console.log(str.substring(2));
+
+        let buffer= ["Joe","pune"];
+        buffer[2] = 'new_value';
+        console.log(buffer);
+
+        let buff = new Array("Joe","pune");
+        buff.push('new_value');
+        console.log(buff);
+
+        console.log(buff.length);
+        console.log(buff.pop());
+        console.log(buff);
+        buff.push(new Room());
+        console.log(buff);
+
+        
+        let student={
+            name: 'vwit',
+            technology: 'Python'
+        };
+        console.log(student);
+        console.log(student.name);
+        student.year = 2012;            //at runtime we are adding a neew property & assigning a value to it.
+                                        //traditionally JS allowed us to add new properties  to existing objects
+        console.log(student.year);
+
+        //So to avoid this problem of adding a new property which was not in existance at the time of object creation
+        //ES6 has introduced class in JS, which is written as follows.
+        class Roomm{
+
+        };
+        let ro=new Roomm();
+        console.log(ro);
+
+        function demo(a,b)
+        {
+            console.log(a);
+            console.log(b);    
+        }
+        let arr = [1,2,3];
+        demo(arr[0], arr[1]);
+        demo(...arr);           //spread operator. 
+
+        //window.location.assign("https://www.google.com")      //keeps the history. you can click back & go Back
+        //window.location.replace("https://www.google.com")       //you cannot go back by clicking back button
+    </script>
+    
+</body>
+</html>

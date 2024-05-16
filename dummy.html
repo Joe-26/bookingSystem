@@ -1,0 +1,37 @@
+<html manifest="(name of the manifest file).manifest">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function demo()
+            {
+                console.log("Hello World!");
+            }
+            demo();
+
+
+            (                                       //IIFE Immedietly invoked function Expression
+                function (i)
+                {
+                    console.log("Hello World!"+i);
+                }
+            )(10);
+
+            const arr=[1,2];
+            //In ES5 & below
+            let a = arr[0];
+            let b = arr[1];
+            //In ES6
+            let [c,d] = arr;
+            console.log(c,d);
+
+            let obj={
+                name:"Joe",
+                tech:"Python"
+            }
+            let {name,tech} = obj;
+            console.log(name,tech);
+        </script>
+    </body>
+</html>

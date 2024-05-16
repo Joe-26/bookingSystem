@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Web Worker</title>
+    </head>
+    <script>
+        function welcome()
+        {
+            alert("Welcome!")
+        }
+        function longrunningtask()
+        {
+            var i = 1;
+            for(i=0; i<=1000000; i++)
+            {
+                var j=1;
+                for(j=0;j<1000000; j++)
+                {
+
+                }
+            }
+            alert("2 done!")
+        }
+        function task_with_webworker()
+        {
+            var web_worker = new Worker("worker.js");        //This is object creation of Worker class
+            web_worker.onmessage = function(event)
+            {
+                alert("Done!")
+            }
+        }
+    </script>
+    <body>
+        <button onclick="welcome()">1</button>
+        <button onclick="longrunningtask()">2</button>
+        <button onclick="task_with_webworker()">3</button>
+    </body>
+</html>

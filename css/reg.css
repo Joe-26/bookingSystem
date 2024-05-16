@@ -1,0 +1,67 @@
+body
+{
+    margin: 0px;
+}
+h1{
+    background-color: #5F1739;
+    color: lightgrey;
+    padding: 20px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+}
+nav
+{
+    background-color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover
+{
+    color: gray;
+    text-decoration: underline;
+}
+form
+{
+    width: 30%;
+    margin: auto;
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 5px;
+}
+input[type="text"],input[type="email"],input[type="password"]
+{
+    width: 100%;
+    padding: 5px;
+}
+#register_submit
+{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+#register_submit:hover
+{
+    background-color: gray;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+span
+{
+	color: crimson;
+    text-align: right;
+}
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(83, 83, 83);
+    color: rgb(189, 188, 188);
+    padding: 10px;
+}

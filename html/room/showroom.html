@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>InfraBooking | All Rooms</title>
+		<link href="../../css/bootstrap/bootstrap.5.0.2.min.css" rel="stylesheet">
+		<link rel="shortcut icon" href="../../img/door-9-16.ico"></link>
+		
+	</head>
+	<body>
+		<h1 class="p-5 mb-0 bg-vwit text-white" style="font-size: 60px;">All Rooms<img class="float-end" src="../../img/vwits_w.png" alt="Logo" width="250"></h1>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button
+				class="navbar-toggler" type="button"
+				data-bs-target="#navbarText"
+				data-bs-toggle="collapse"
+				aria-controls="navbarText"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="../home.html" class="nav-link fs-5">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="showroom.html" class="nav-link fs-5">All Rooms</a>
+					</li>
+					<li class="nav-item">
+						<a href="addroom.html" class="nav-link fs-5">Add Room</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link fs-5">Show All Booking</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link fs-5">About Us</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="navbar-nav">
+					<li class="navbar-text">
+						Welcome! <div class="text-uppercase"><script>document.write(sessionStorage.getItem("username"))</script></div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fs-5" href="javascript:logout()">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<br>
+		<div class="container col-6">
+			<table class="table table-success table-striped">
+				<caption>Total rooms available for meetings </caption>
+				<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Capacity</th>
+					<th>Action</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><a href="">1</a></td>
+					<td>Meeting Room</td>
+					<td>10</td>
+					<td>
+						<a href=""><img src="../../img/up.png" width = "20" title="Update" onclick="confirm('Do you want to Confirm?')"></img></a> &nbsp;&nbsp;
+						<a href=""><img src="../../img/del.jpg" width = "20" title="Delete" onclick="confirm('Do you really want to Delete?')"></img></a>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="">2</a></td>
+					<td>Conference Room</td>
+					<td>15</td>
+					<td>
+						<a href=""><img src="../../img/up.png" width = "20" title="Update" onclick="confirm('Do you want to Confirm?')"></img></a> &nbsp;&nbsp;
+						<a href=""><img src="../../img/del.jpg" width = "20" title="Delete"onclick="confirm('Do you really want to Delete?')"></img></a>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="">3</a></td>
+					<td>Board Room</td>
+					<td>20</td>
+					<td>
+						<a href=""><img src="../../img/up.png" width = "20" title="Update" onclick="confirm('Do you want to Confirm?')"></img></a> &nbsp;&nbsp;
+						<a href=""><img src="../../img/del.jpg" width = "20" title="Delete"onclick="confirm('Do you really want to Delete?')"></img></a>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="">4</a></td>
+					<td>Celebration Room</td>
+					<td>75</td>
+					<td>
+						<a href=""><img src="../../img/up.png" width = "20" title="Update" onclick="confirm('Do you want to Confirm?')"></img></a> &nbsp;&nbsp;
+						<a href=""><img src="../../img/del.jpg" width = "20" title="Delete"onclick="confirm('Do you really want to Delete?')"></img></a>
+					</td>
+				</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">Total no. of rooms are 4</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		
+	</body>
+	<script>
+		let value = sessionStorage.getItem("code");
+		if (value != "secret")
+		{
+			window.location.replace("../user/login.html");
+		}
+		function logout()
+		{
+			confirm("Are you sure you want to LOGOUT?");
+			window.location.replace("../index.html");
+		}
+	</script>
+	<script src="../../js/bootstrap.5.0.2.bundle.min.js"></script>
+	<br><br><br>
+	<footer class="bg-dark text-white p-3 w-100" style="position:fixed; bottom: 0px;">
+		This is Copyright of &copy;VWITS 2021
+	</footer>
+</html>

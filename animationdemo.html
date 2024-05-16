@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            @keyframes vwitanimation {
+                from {background-color: blue;}
+                to {background-color: green;}             
+            }
+            div
+            {
+                background-color: blue;
+                width: 200px;
+                height: 200px;
+                animation-name: vwitanimation;
+                animation-duration: 5s;
+            }
+            button
+            {
+                padding: 10px;
+                background-color: blue;
+            }
+            button:active
+            {
+                animation-name: vwitanimation;
+                animation-duration: 2s;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="box"></div>
+        <button>Click to change color!</button>
+
+    </body>
+</html>
